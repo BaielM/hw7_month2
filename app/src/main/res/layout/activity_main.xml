@@ -59,9 +59,11 @@
                 android:text="%"
                 app:cornerRadius="200dp"
                 android:layout_marginEnd="18dp"/>
+
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/btn_division"
                 style="@style/Orange.Button"
+                android:onClick="OnOperationCLick"
                 android:text="/"
                 app:cornerRadius="200dp"/>
 
@@ -75,17 +77,19 @@
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/btn_7"
                 style="@style/Dark.Gray.Button"
+                android:onClick="OnNumberClick"
                 android:text="7"
                 app:cornerRadius="200dp"/>
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/btn_8"
                 style="@style/Dark.Gray.Button"
+                android:onClick="OnNumberClick"
                 android:text="8"
                 app:cornerRadius="200dp"
                 android:layout_marginHorizontal="18dp"/>
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/btn_9"
-
+                android:onClick="OnNumberClick"
                 style="@style/Dark.Gray.Button"
                 android:text="9"
                 app:cornerRadius="200dp"
@@ -94,6 +98,7 @@
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/btn_multiplication"
                 style="@style/Orange.Button"
+                android:onClick="OnOperationCLick"
                 android:text="*"
                 app:cornerRadius="200dp"/>
 
@@ -112,16 +117,19 @@
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/btn_5"
                 style="@style/Dark.Gray.Button"
+                android:onClick="OnNumberClick"
                 android:text="5"
                 app:cornerRadius="200dp"
                 android:layout_marginHorizontal="18dp"/>
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/btn_6"
                 style="@style/Dark.Gray.Button"
+                android:onClick="OnNumberClick"
                 android:text="6"
                 app:cornerRadius="200dp"
                 android:layout_marginEnd="18dp"/>
             <com.google.android.material.button.MaterialButton
+                android:onClick="OnOperationCLick"
                 style="@style/Orange.Button"
                 android:id="@+id/btn_minus"
                 android:text="-"
@@ -150,6 +158,7 @@
             <com.google.android.material.button.MaterialButton
                 style="@style/Dark.Gray.Button"
                 android:id="@+id/btn_3"
+                android:onClick="OnNumberClick"
                 android:text="3"
                 app:cornerRadius="200dp"
                 android:layout_marginEnd="18dp"/>
@@ -194,5 +203,22 @@
         </LinearLayout>
 
     </LinearLayout>
+
+    <Button
+        android:id="@+id/bottom"
+        android:visibility="gone"
+        android:layout_width="177dp"
+        android:layout_height="59dp"
+        android:layout_margin="18dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:text="New Activity"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:backgroundTint="@color/purple_200"
+        tools:ignore="InvalidId" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
